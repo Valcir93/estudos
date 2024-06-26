@@ -1,0 +1,105 @@
+@charset "utf8";
+
+@font-face {
+    font-family: fonte;
+    src: url(fontes/bingkisan.ttf) format(truetype);}
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+:root {
+    --cor01: #da95a1;
+    --cor02: #d30d32;
+    --cor03: #722533;
+}
+
+header {
+    background-image:linear-gradient( to top, #e7c1c7, #f797a8, #ec6075);
+    min-height: 150px;
+    background-color:#D97E8E;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}
+header > h1 {
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-family: fonte,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    background-color:#e7c1c7;
+    }
+ nav > a{
+    font-size: 18px;
+    color: black;
+    text-decoration: dotted;
+    box-shadow: 5px 0px 5px #d18390d2;
+    transition-duration: .5s;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px
+   }
+   nav >a:hover{
+    background-color: #fcc3cc;
+    color: #3d3133; 
+    border-radius: 4px;
+   }
+     main {
+      background-color: white;
+      margin: auto;
+      max-width: 800px;
+      min-width: 320px;
+      box-shadow: 0px 0px 10px black;
+      margin-top: 30px;
+      margin-bottom: 30px;
+     }
+     main h2 { 
+       font-family:Arial, Helvetica, sans-serif;
+       background-image:linear-gradient( to top, #e7c1c7, #f797a8, #ec6075);
+     }
+     main img { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        margin: 13%;
+        }
+     div.video{
+        background-color: #D97E8E;
+        margin: 0px -20px 30px-20px;
+        padding: 20px;
+        padding-bottom: 59%;
+        position: relative;
+    }
+    div.video > iframe {
+
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+   
+     article{
+        background-color: var(--cor01);
+    }
+
+    article >p {
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1,5em;
+    line-height: 1,5em; 
+   }
+  
+    footer {
+        background-image:linear-gradient( to top, #e7c1c7, #f797a8, #ec6075);
+        text-align: center;
+        padding: 5px;
+        font-size: 0,5em;
+
+    }
